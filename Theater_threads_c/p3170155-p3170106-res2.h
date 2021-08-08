@@ -1,0 +1,20 @@
+#define Nseat 10 
+#define Ntel 10 
+#define Nseatlow 1
+#define Nseathigh 5
+#define tseatlow 5
+#define tseathigh 10
+#define Pcardsucces 0.9
+
+#define Ncash 4
+#define NzoneA 5
+#define NzoneB 10
+#define NzoneC 10
+#define PzoneA 0.20
+#define PzoneB 0.4
+#define PzoneC 0.4
+#define CzoneA 30 
+#define CzoneB 25
+#define CzoneC 20 
+#define tcashlow 2 
+#define tcashhigh 4 
