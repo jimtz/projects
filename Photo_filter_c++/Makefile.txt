@@ -1,0 +1,29 @@
+
+
+neg: neg.o ppm.o
+	g++   ppm.o neg.o Color.h Vec3.h Filter.h -o neg
+	
+ppm.o: ppm.cpp ppm.h
+	g++ -c ppm.cpp
+
+Image.o: Image.cpp Image.h
+	g++ -c Image.cpp
+	
+Color.o: Color.h
+	g++ -c Color.h
+	
+Array.o: Array.h
+	g++ -c Array.h
+
+Filter.o: Filter.h
+	g++ -c Filter.h
+	
+Vec3.o: Vec3.h
+	g++ -c Vec3.h
+	
+clean:
+	rm *.o neg
+	
+
+
+
