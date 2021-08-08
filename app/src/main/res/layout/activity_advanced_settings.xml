@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AdvancedSettingsActivity">
+
+
+    <ImageButton
+        android:id="@+id/powerBtn"
+        android:layout_width="184dp"
+        android:layout_height="154dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/red_power" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="355dp"
+        android:layout_height="177dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textColorLink="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/echo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/powerBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <LinearLayout
+
+        android:id="@+id/saloon2"
+        android:layout_width="124dp"
+        android:layout_height="120dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:padding="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/kitchen2"
+        app:layout_constraintEnd_toStartOf="@+id/echo"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintVertical_bias="0.288">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/kitchen2"
+        android:layout_width="140dp"
+        android:layout_height="125dp"
+        android:layout_margin="20dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toEndOf="@+id/echo"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/bed2"
+        android:layout_width="124dp"
+        android:layout_height="114dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:padding="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/echo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saloon2"
+        app:layout_constraintVertical_bias="0.975">
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/powerBtn"
+        app:layout_constraintEnd_toStartOf="@+id/powerBtn"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/record2"
+        android:layout_width="70dp"
+        android:layout_height="84dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/powerBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toEndOf="@+id/powerBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87"
+        app:srcCompat="@drawable/record" />
+
+    <LinearLayout
+
+        android:id="@+id/bath2"
+        android:layout_width="120dp"
+        android:layout_height="113dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/kitchen2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/saloon2"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintVertical_bias="0.283">
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/echo"
+        android:layout_width="102dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="128dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/powerBtn"
+        app:layout_constraintVertical_bias="0.956" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+electrical
+device
+devices
+fridge
+oven
+warm
+cook
+cold
